@@ -6,7 +6,7 @@ User Function MT010ALT()
   local lRet     := .t.
   
   if existBlock('alteraDescricao')
-    lRetorno := execBlock('alteraDescricao', .f., .f.,)
+    lRet := execBlock('alteraDescricao', .f., .f.,)
   endif
 
   restArea(aArea)
