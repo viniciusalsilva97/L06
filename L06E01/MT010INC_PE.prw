@@ -6,6 +6,8 @@ User Function MT010INC()
   local lRet     := .t.
   
   if existBlock('alteraDescricao')
+    //* O execBlock só chama funções de usuário
+    //* PE tradicionais podem precisar fazer uso do recLock()
     lRet := execBlock('alteraDescricao', .f., .f.,)
   endif
 
